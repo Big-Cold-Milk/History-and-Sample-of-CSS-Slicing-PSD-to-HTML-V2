@@ -205,3 +205,8 @@ p {
 .sample11 .text {
     grid-area: text;
 }
+
+.beginnings_year {
+    color: red;
+    text-decoration: underline;
+}
