@@ -36,6 +36,10 @@
 
 <https://zh.wikipedia.org/wiki/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E8%BF%87%E7%A8%8B>
 
+<https://tshuang0611.pixnet.net/blog/post/403200746-2012-%E9%9B%BB%E5%95%86%E8%A6%8F%E5%8A%83%E6%9E%B6%E6%A7%8B%E5%9C%96-(%E5%B7%B2%E5%8F%AF%E5%85%AC%E9%96%8B%E7%9A%84%E8%B3%87%E8%A8%8A)>
+
+<https://medium.com/as-a-product-designer/%E5%85%88%E5%88%A5%E6%80%A5%E8%91%97%E7%95%ABui-%E4%BD%A0%E8%81%BD%E9%81%8Eflow-chart%E5%97%8E-c6715f055cfc>
+
 <details>
 <summary>廣告行業常用語-爆炸米奇吱吱吱吱</summary>
 
