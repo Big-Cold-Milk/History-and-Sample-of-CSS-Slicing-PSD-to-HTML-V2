@@ -8,7 +8,7 @@
 
 * [Codepen_demo](https://codepen.io/johch3n611u/full/zYGjxvg)
 
-![IMAGE](https://github.com/johch3n611u/History-and-Sample-of-CSS-Slicing-PSD-to-HTML/blob/master/img/index2.png?raw=true)
+![IMAGE](https://github.com/Big-Cold-Milk/History-and-Sample-of-CSS-Slicing-PSD-to-HTML-V2/blob/master/img/index2.png?raw=true)
 
 ## 參考
 
