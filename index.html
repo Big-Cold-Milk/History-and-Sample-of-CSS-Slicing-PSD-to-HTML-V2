@@ -21,12 +21,11 @@
             <a href="https://mickyboom1228.pixnet.net/blog/post/358212260">廣告行業常用語-爆炸米奇吱吱吱吱</a>
         </h4>
         <hr/>
-        <h2><a href="https://hackmd.io/@k139/r1y-9LmK4/%2Fs%2Fr1uWsUmt4?type=book">Development Model</a></h2>
-        <ul>
-            <li>. . .</li>
-        </ul>
+        <h2>
+            <a href="https://hackmd.io/@k139/r1y-9LmK4/%2Fs%2FByC7o87FE?type=book#%E8%B3%87%E8%A8%8A%E7%B3%BB%E7%B5%B1%E9%96%8B%E7%99%BC%E6%A8%A1%E5%BC%8F">Information System Development Model</a> ( Practice / Management )</h2>
+        <li>Waterfall、Incremental、Prototyping、Spiral、Concurrent、RUP、Agile、MDA</li>
+        <li>. . .</li>
         <h2>Life Cycle</h2>
-
         <h3>Analysis → Planning → Design → Implementation → Maintenance → Analysis ↻</h3>
         <ul>
             <li>
@@ -98,7 +97,7 @@
 
                     <li>Contact Us</li>
                 </ul>
-                <li><code>System Architecture Diagram</code><b> Example</b></li>
+                <li><code>System Architecture Diagram | Context Diagram</code><b> Example</b></li>
                 <ul>
                     <li>Turn on the System</li>
                     <ul>
@@ -137,35 +136,129 @@
                 <h2>Design</h2>
             </li>
             <ul>
-                <li><code>Flow Chart</code> Terminal、Process、Decision、Input/Output</li>
-                <ul>
 
+                <h3>Structured、Modular : Purpose : Good to Reuse & Maintain</h3>
+                <li>All Diagram Just Auxiliary easy to ( Project Management | System、Data Architect / Designer | Boss ) Communication Customer Required with ( Research and Development Engineer | Programming | Design ).</li>
+                <ul>
+                    <ul>
+                        <li><code>Flow Chart</code> Terminal、Process、Decision、Input/Output</li>
+                        <li><code><a href="https://dbdiagram.io/d/5e86e0544495b02c3b89305d">Database Diagram</a></code> Data Glossary & Explanation & Dictionary Describe</li>
+                        <li><code>UML</code> Unified Modeling Language</li>
+                        <li><code>PDL</code> Procedural Description Language</li>
+                        <li><code>SCD</code> System Context Diagram</li>
+                        <li><code>DFD</code> Data Flow Diagram</li>
+                        <li><code>Structure Chart</code></li>
+                        <li><code>HIPO</code> Hierarchy plus Input-Process-Output</li>
+                        <li><code>PS</code> Process Specification</li>
+                        <li><code>ERD</code> Entity-relationship model</li>
+                    </ul>
+                    <li>Example <code>PDL</code> : How to Coding ? Just Speak It.</li>
+                    <ul>
+                        <li>fuction : Calculate delivery details plus total amount</li>
+                        <li>Begin :</li>
+                        <ul>
+                            <li>Delivery details of mobile delivery note to the first record</li>
+                            <li>Set the initial value of the delivery details and total amount of the delivery note to 0</li>
+                            <li>Repeat the following actions when the delivery details of the delivery note have not exceeded the last one</li>
+                            <ul>While loop
+                                <li>Begin :</li>
+                                <ul>
+                                    <li>fuction : Delivery details of delivery note plus total amount</li>
+                                    <li>Delivery details (quantity x unit price) + delivery details of the original delivery note plus the total amount</li>
+                                    <li>Delivery details of mobile delivery note to the next record</li>
+                                </ul>
+                                <li>End</li>
+                            </ul>
+                        </ul>
+                        <li>End</li>
+                    </ul>
+                    <li>Summary</li>
+                    <ul>Stage : Flow Chart
+                        <li>DescriptionUser Processes and Rules</li>
+                    </ul>
+                    <ul>Stage : Unified Modeling Language
+                        <li>Description System Behavior</li>
+                    </ul>
+                    <ul>Stage : Procedural Description Language
+                        <li>Description Program Logic</li>
+                    </ul>
                 </ul>
-                <li><code><a href="https://dbdiagram.io/d/5e86e0544495b02c3b89305d">Database Diagram</a></code> Data Glossary & Explanation</li>
-                <li><code>UML</code> Unified Modeling Language</li>
-                <li><code>SCD</code> System Context Diagram</li>
-                <li><code>DFD</code> Data Flow Diagram</li>
-                <li><code>Data dictionary</code> Document to Describe Meaning of Data</li>
-                <li><code>Structure Chart</code></li>
-                <li><code>HIPO</code> Hierarchy plus Input-Process-Output</li>
-                <li><code>Process Specification</code></li>
-                <li><code>ERD</code> Entity-relationship model</li>
+
+                <h3>Rules of Thumb |
+                    <a href="https://zh.wikipedia.org/wiki/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F_(%E8%AE%A1%E7%AE%97%E6%9C%BA)">Design Pattern</a>
+                </h3>
+                <li>No GOTO Just one Input & Output. Dijkstra 1979. Logic can be classified as ( 1.Sequence. 2.If-Then-Else. 3.While-Do. )</li>
+
+                <ul>
+                    <h4><a href="https://zh.wikipedia.org/wiki/%E7%BC%96%E7%A8%8B%E8%8C%83%E5%9E%8B">Programming Paradigm</a></h4>
+                    <li>Level : ( External Reference ) Library | System → Module → Model → Logic.</li>
+                    <a href="https://hackmd.io/@k139/r1y-9LmK4/%2Fs%2FH1x46U7KN?type=book#%E7%B5%90%E6%A7%8B%E5%8C%96%E5%88%86%E6%9E%90%E8%88%87%E8%A8%AD%E8%A8%88%E8%A9%95%E4%BC%B0%E6%BA%96%E5%89%87">
+                        <li><code>Cohesion</code> Relevance of what is done inside the Module.</li>
+                        <li><code>Coupling</code> The degree of correlation between modules within the System.</li>
+                    </a>
+                    <li><code>OOP</code> ( Object-oriented programming ) Modular Design Derived from Architectural Design.</li>
+                    <li><code>SOLID</code></li>
+                    <ul>
+                        <li>Single-responsibility principle</li>
+                        <li>Open–closed principle</li>
+                        <li>Liskov substitution principle</li>
+                        <li>Interface segregation principle</li>
+                        <li>Dependency inversion principle</li>
+                    </ul>
+                    <li>functional programming</li>
+                </ul>
+                <li>Final Goal Just Used <code>High Cohesion</code> & <code>Low Coupling</code> to finish Product of Minimum Viable Product with Best Practice and Code Quality.</li>
+
+                <h3>Relational Database | Entity-Relationship Diagram | Normalization</h3>
+                <li>Database Structure determines Application Functionality.</li>
+                <li>For the sake of convenience, sacrifice accuracy and give up constraints, The latter two may not be indeed in practice.</li>
             </ul>
 
             <li>
                 <h2>Implementation</h2>
             </li>
             <ul>
-                <li><code>UML</code> Unified Modeling Language</li>
+                <h3>Work Flow</h3>
+                <ul>
+                    <li>System Architecture Diagram → Flow Chart → ( <a href="https://medium.com/monospace-tw/%E6%9B%B4%E9%81%A9%E5%90%88-ui-%E8%A8%AD%E8%A8%88%E5%B8%AB%E8%A3%BD%E4%BD%9C%E7%9A%84%E9%A0%81%E9%9D%A2%E6%B5%81%E7%A8%8B%E5%9C%96-wireflow-d51b785d85c2">Wireflow</a>                        → Wireframe → Mockup → Prototype ) UIUX-Designer → Front-End → Back-End </li>
+                    Most of time Just CSS Slicing (PSD to HTML)...
+                    <li>System Architecture Diagram → Flow Chart → ( Unified Modeling Language → Procedural Description Language ) System Designer -> Back-End</li>
+                    Most of time Just Demand List to Programing...
+                    <li>( Entity-Relationship Diagram → Database Normalization ) Database Administrator → Back-End</li>
+                    Most of time Just Increase when needed...
+                    <li>( Runtime Environment → Deployment ) DevOps</li>
+                    Most of time The above three Just One Back-End does...
+
+                </ul>
             </ul>
-
-
+            <ul>
+                <h3>Top-Down Integration Test ( Quality Assurance )</h3>
+                Most of time Just Tested by customers...
+                <ul>
+                    <li>Unit Testing</li>
+                    <li>Aggregate Testing</li>
+                    <li>Acceptance Testing</li>
+                    <li>System Testing</li>
+                </ul>
+            </ul>
 
             <li>
                 <h2>Maintenance</h2>
             </li>
             <ul>
-                <li><code>UML</code> Unified Modeling Language</li>
+                <li><code>New Required by Customer | System Program update Version</code></li>
+
+                <li><code>Code Refactoring</code></li>
+
+                <li><code>CI</code> ( Continuous Integration )</li>
+                <li><code>CD</code> ( Continuous Delivery )</li>
+
+                <li><a href="https://zhuanlan.zhihu.com/p/91129509">Level : MIS → DevOps → SRE</a></li>
+                <ul>
+                    <li>MIS ( Management Information System )</li>
+                    <li>DevOps ( Development ) ( Operations )</li>
+                    <li>SRE ( Site Reliability Engineer )</li>
+                </ul>
             </ul>
 
         </ul>
@@ -192,14 +285,23 @@
                 </li>
                 <li>
                     <code>Parallax scrolling</code> ( Background Sliding Speed Slower than Foreground ) Computer Graphics. beginnings in <span class="beginnings_year">1930</span></li>
+
+
+
                 <li>
                     <code>Sprite</code> ( Synthetic Image Positioning ) Computer Graphics. beginnings in <span class="beginnings_year">1974</span></li>
+                <li>
+                    <code><a href="https://en.wikipedia.org/wiki/Digital_marketing#History">Digital Marketing</a></code> beginnings in <span class="beginnings_year">1971</span></li>
+                <li>
+                    <code>EDM</code> (Electronic Direct Mail) beginnings in <span class="beginnings_year">1978</span></li>
 
                 </br>
 
                 <li>
                     <code>Internet</code> Carries a Vast Range of Information Resources and Services, Such as inter-linked Hypertext Documents and Applications of WWW, Electronic Mail, Telephony, and File Sharing. Not to be confused with the WWW. beginnings
                     in <span class="beginnings_year">1980s</span></li>
+                <li>
+                    Email spam beginnings in <span class="beginnings_year">1990s</span></li>
                 <li>
                     <code>WWW</code> ( World Wide Web ) is an information system where documents and other web resources are identified by <code>Uniform Resource Locators</code> (URLs, such as https://www.example.com/), which may be interlinked by
                     <code>hypertext</code>, and are accessible over the Internet. beginnings in <span class="beginnings_year">1991</span></li>
@@ -212,6 +314,11 @@
                     <code>CDN</code>( Content Delivery Network ) Geographically Distributed Network of Proxy Servers and their Data Centers. beginnings in <span class="beginnings_year">1990s</span></li>
                 <li>
                     <code>SEO</code>( Search Engine Optimization ) process of growing the quality and quantity of website traffic by increasing the visibility of a website or a web page to users of a web search engine. beginnings in <span class="beginnings_year">1990s</span></li>
+
+                <li>
+                    <code>Landing page</code></li>
+                <li>
+                    <code>A/B testing</code></li>
                 <li>
                     <code>GIF</code> Graphics Interchange Format. beginnings in <span class="beginnings_year">1989</span></li>
                 <li>
